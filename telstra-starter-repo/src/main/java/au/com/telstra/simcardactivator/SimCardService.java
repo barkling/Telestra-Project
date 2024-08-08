@@ -22,6 +22,7 @@ public class SimCardService {
     }
 
     public SimCard getSimCard(long simCardID) {
-        return simCardRepo.findSimCardById(simCardID);
+        SimCard simcard = simCardRepo.findById(simCardID);
+        return simcard;
     }
 }
